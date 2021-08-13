@@ -12,3 +12,109 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    height: 100vh;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-light-gray);
+    width:100%;
+    height:100%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+}
+.car {
+    display:flex;
+    flex-direction: column;
+    padding:50px;
+    padding-bottom: 40px;
+}
+.car h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color:var(--very-light-gray);
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.car img {
+    margin-bottom: 25px;
+}
+.car p {
+    color: var(--transparent-white);
+    font-size: 16px;
+    padding: 30px 0px;
+    line-height: 25px;
+    width:185px;
+}
+.car button {
+    margin-top: 55px;
+    padding:0px 5px;
+    padding-top:12px;
+    padding-bottom:12px;
+    border-radius: 30px;
+    width:130px;
+    border:2px solid var(--very-light-gray);
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+.sedans {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.suvs {
+    background-color: var(--dark-cyan);
+}
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.sedans button {
+    color: var(--bright-orange);
+}
+.suvs button {
+    color: var(--dark-cyan);
+}
+.luxury button{
+    color: var(--very-dark-cyan);
+}
+
+.car button:hover {
+    background-color: transparent;
+    color: var(--very-light-gray);
+}
+
+@media screen and (max-width:875px) {
+    body {
+        height: max-content;
+    }
+    .card {
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .sedans {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .luxury {
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+    .car button {
+        margin-top: 0px;
+    }
+    .car p {
+        width:225px;
+    }
+    
+}
