@@ -1,4 +1,4 @@
-# Stats preview card component 
+# 3 columns preview card component
 
 ## 📝 About the challenge
 
